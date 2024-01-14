@@ -1,0 +1,317 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: #da8f8f;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex; /* Update to flexbox for horizontal layout */
+  }
+  
+  .navbar ul li {
+    margin-right: 100px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+
+  /* ... (Previous CSS code) ... */
+
+/* Symposium Name Styles */
+.symposium-name {
+    text-align: center;
+    margin-top: 100px;
+    height: 650px; /* Adjust as needed for vertical positioning */
+  }
+  
+  .symposium-name h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+
+  /* ... (Previous CSS code) ... */
+
+/* About Section Styles */
+.about-section {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: safe;
+  height: 600px;
+  margin: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+    border: 5px solid rgb(0, 0, 0);
+  }
+  
+  .about-description {
+    width: 50%;
+     /* Adjust width as needed */
+  }
+  
+  .about-description h2 {
+    color: #333;
+  }
+  
+  .about-images {
+    width: 45%;
+     /* Adjust width as needed */
+  }
+  
+  .about-images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space between images */
+  }
+
+  /* ... (Previous CSS code) ... */
+
+/* Events Section Styles */
+.events-section {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1000px;
+    border: 5px solid;
+  }
+
+  .event-name{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Hide event name by default */
+  transition: opacity 0.3s ease;
+  }
+  
+  .technical-events,
+  .non-technical-events {
+    margin-bottom: 30px;
+    padding: 20px;
+    
+  }
+  
+  .technical-events h2,
+  .non-technical-events h2 {
+    color: #333;
+  }
+
+  .technical-events,
+  .non-technical-events{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 20px auto;
+  }
+  
+  
+  .event-boxes {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+  }
+  
+  .event-box {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+  }
+.non-technical-events .event-box{
+    width: 300px;
+    height: 300px;
+    justify-content:space-between;
+}
+
+.box .reg{
+  
+    display: block;
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  
+
+}
+  
+  
+  .event-box:hover ,.event-name {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 1
+  }
+  
+  .event-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  .event-box p {
+    display: none;
+    color: #666;
+  }
+  
+  .event-box:hover p {
+    display: block;
+  }
+
+  .event-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(154, 151, 151, 0.9); /* Adjust as needed */
+    padding: 20px;
+    display: none;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .event-box:hover .event-details {
+    display: block;
+  }
+  
+  .box{
+    margin: 20px;
+  }
+
+  .tech{
+    justify-content:baseline;
+  }
+
+
+
+
+
+
+
+  .site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style other footer elements as needed */
+  
+
+  /* Reset and basic styles */
+/* ... (Existing styles) ...
+
+#section1,
+#section2,
+#section3 {
+  height: 100vh;  Set the height of each section to cover the viewport height
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vb;
+  transition: background-color 0.5s ease; /* Optional: Add a smooth background color transition 
+}
+
+#section1 {
+  background-color: #f8f8f8;  Background color for Section 1 
+}
+
+#section2 {
+  background-color: #e8e8e8; /* Background color for Section 2 
+}
+
+#section3 {
+  background-color: #d8d8d8; /* Background color for Section 3 
+}
+*/
+
+/* Reset and basic styles */
+/* ... (Existing styles) ... */
+
+/* Default styles for larger screens */
+/* Reset and basic styles */
+/* ... (Existing styles) ... */
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media(max-width:768px){
+  .abtImage{
+    display: none;
+  }
+  .about-description{
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .events-section{
+    flex-direction: column;
+   padding: 0 30px;
+  }
+
+
+}

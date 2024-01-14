@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .countdown-timer {
+            display: inline-block !important;
+            padding: 10px !important;
+            width: 40% !important;
+            height: 50% !important;
+            text-decoration: none !important;
+            font-size: 16px !important;
+            /* Add any other styles you need */
+        }
+
+    body {
+      background: #028090;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .hamburger {
+      width: 100px;
+      height: 100px;
+      background: #032F41;
+      box-shadow: 0 0 15px rgba(3, 47, 65, 1);
+      cursor: pointer;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .hamburger > div {
+      position: absolute;
+      height: 10px;
+      background: #fff;
+      transition: width 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .first {
+      width: 55px;
+      top: 25px;
+      left: 20px;
+    }
+
+    .second {
+      width: 40px;
+      top: 45px;
+      left: 20px;
+    }
+
+    .third {
+      width: 50px;
+      top: 65px;
+      left: 20px;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background: #032F41;
+      box-shadow: 0 0 15px rgba(3, 47, 65, 1);
+      border-radius: 5px;
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      border-bottom: 1px solid #fff;
+    }
+
+    .dropdown a:hover {
+      background: #01505D;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="wrapper">
+    <div class="hamburger" onclick="toggleDropdown()">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="dropdown" id="myDropdown">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Contacts</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+  <a href="https://logwork.com/countdown-47ai" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2024-01-15 17:58">               </a>
+
+
+
+
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-47ah" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2024-01-15 17:46"> </a>
+
+   <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("myDropdown");
+      dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
